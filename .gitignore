@@ -1,0 +1,8 @@
+.deploys/
+.deps/
+.git
+.states
+scripts/
+contracts/artifacts/build-info/
+.prettierrc.json
+.prettierrc1.json
