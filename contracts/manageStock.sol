@@ -8,13 +8,13 @@ interface StockInterface{
     function burnFrom(address name, uint256 value) external;
     function allowance(address owner, address spender) external  returns(uint256);
     function transferFrom(address from, address to, uint256 value) external returns(bool);
+    function transfer(address to, uint256 value) external returns (bool);
 }
 
 contract ManageStock is Ownable{
 
     constructor(address initialOwner)
-        Ownable(initialOwner)
-    {}
+        Ownable(initialOwner) {}
 
     struct Stock {
         string shortName;

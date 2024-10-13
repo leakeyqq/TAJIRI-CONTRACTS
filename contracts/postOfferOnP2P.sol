@@ -12,8 +12,6 @@ contract PostOfferOnP2P is RedeemStock, ReentrancyGuard{
 
     constructor(address initialOnwer) RedeemStock(initialOnwer) {}
 
-    uint offerID = 0;
-
     struct BuyOffer {
         address stockContract;
         uint stockAmount;
